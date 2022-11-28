@@ -6,10 +6,12 @@ variable "aws_provider_configuration" {
   })
   sensitive = true
   nullable = false
+  description = "AWS provider configuration"
 }
 
 variable "environment" {
   type = string
   default = "dev"
   nullable = false
+  description = "Terraform application destination e.g. dev, staging, prod"
 }
